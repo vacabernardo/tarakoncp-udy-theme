@@ -1,5 +1,5 @@
 {
-  "name": "tarakoncp-udy-theme",
+  "name": "tarakon-udy-theme",
   "dependencies": {
     "@11ty/eleventy": "^0.11.0",
     "glob": "^7.1.6",

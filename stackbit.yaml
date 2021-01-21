@@ -6,6 +6,6 @@ staticDir: "static"
 uploadDir: "images"
 pagesDir: "site"
 metadata:
-  title: "tarakoncp"
+  title: "tarakon "
   description: "Theme created in Webflow and converted with Udesly"
 models: {}
