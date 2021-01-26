@@ -27,7 +27,6 @@
   display: flex;
   width: 80%;
   max-width: 860px;
-  margin-top: -10vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -109,9 +108,13 @@
   width: 100vw;
   height: 100vh;
   background-image: url('/static/images/background-tarakon2.jpg');
-  background-position: 0% 50%;
-  background-size: auto 80vh;
+  background-position: 0% 10%;
+  background-size: auto 70vh;
   background-repeat: no-repeat;
+}
+
+.image {
+  height: 8vh;
 }
 
 @media screen and (max-width: 991px) {
@@ -123,6 +126,20 @@
 @media screen and (max-width: 767px) {
   .fondo {
     background-size: auto 70vh;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .div-block {
+    width: 90%;
+  }
+
+  .fondo {
+    background-position: 100% 0%;
+  }
+
+  .image {
+    height: auto;
   }
 }
 
