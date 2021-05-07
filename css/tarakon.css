@@ -107,7 +107,7 @@
   z-index: -1;
   width: 100vw;
   height: 100vh;
-  background-image: url('/static/images/background-tarakon2.jpg');
+  background-image: url('../images/background-tarakon2.jpg');
   background-position: 0% 10%;
   background-size: auto 70vh;
   background-repeat: no-repeat;
@@ -162,4 +162,3 @@
   }
 }
 
-html{visibility: visible;opacity:1;}
