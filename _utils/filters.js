@@ -1,4 +1,7 @@
 const htmlmin = require("html-minifier");
+const md = require('markdown-it')({
+  html: true
+});
 
 function escape(s) {
   return ('' + s) /* Forces the conversion to string. */
@@ -416,6 +419,7 @@ module.exports = function (eleventyConfig, ecommerceFormat, priceTemplate) {
       const item = {
         variationsData: {
           slug: product.data.slug,
+          name: product.data.name,
           defaultSku: '/data/' + product.data['default-sku'].replace('md', 'json'),
           properties,
           variations
@@ -571,5 +575,17 @@ module.exports = function (eleventyConfig, ecommerceFormat, priceTemplate) {
     return array.slice(offset, limit);
 
   });
+
+  eleventyConfig.addLiquidFilter('markdown', function(value) {
+    if (!value) {
+      return ""
+    }
+    try {
+      return md.render(value);
+    } catch(e) {
+      return value;
+    }
+})
+
 
 };
